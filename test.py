@@ -1,11 +1,12 @@
 import unittest
 
-import Game from game
+from game import Game
 
 
 class TestGameOfLife(unittest.TestCase):
 
     def test_generate_neighbours(self):
+        map = set()
         game = Game(map)
 
         cell_coordinates = (0,0)
